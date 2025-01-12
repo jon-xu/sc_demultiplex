@@ -37,7 +37,7 @@ Xu, J., Falconer, C., Nguyen, Q. et al. Genotype-free demultiplexing of pooled s
    
    b) The output VCF file should be further filtered using bcftools so that only the SNVs with quality score larger than 30 would be kept.
    
-   e.g. bcftools filter -i '%QUAL>30' snv.vcf -o filtered.vcf
+   e.g. bcftools filter -i 'QUAL>30' snv.vcf -o filtered.vcf
    
 ### 3. Building allele count matrices
    a) Run "scSplit count" and get two .csv files ("ref_filtered.csv" and "alt_filtered.csv") as output.
